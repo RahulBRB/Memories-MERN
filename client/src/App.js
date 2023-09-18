@@ -1,5 +1,7 @@
 import React from "react";
 import {Container, AppBar, Typography, Grow, Grid} from "@mui/material";
+import Posts from './components/Posts/Posts';
+import Form from './components/Form/Form';
 
 import memories from './images/memories.png';
 
@@ -13,7 +15,7 @@ const App = ()=>{
                 <img src={memories} alt="memories" height="150"/>
             </AppBar>
             <Grow in>
-                <Conntainer>
+                <Container>
                     <Grid container justify="space-between" alignItems="stretch" spacing={3}>
                         <Grid item xs={12} sm={7}>
                             <Posts />
@@ -22,7 +24,7 @@ const App = ()=>{
                             <Form />
                         </Grid>
                     </Grid>
-                </Conntainer>
+                </Container>
             </Grow>
         </Container>
     );
